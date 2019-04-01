@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Using the develpment console.</title>
+    </head>
+    <body>
+        <p class='a b' id='a'>
+            Using the develpment console. Press [f12] and click the console tab.
+        </p>
+        <p name="joe" class='a b'>
+                This is practice text
+        </p>
+        <p id='bold' class='blue'>
+            This section is to practice document.querySelector
+        </p>
+        <div id="MyText"></div>
+        <script>
+            var elem = document.getElementById("a"); // Get the elements
+            elem.style = 'color: #FF0000;'; // change color to red
+
+            var list = document.getElementsByTagName('p');// get all p elements
+            list[1].style = 'color: #0000FF';
+
+            var classname = document.getElementsByClassName('a b');
+            classname[0].style = 'color: #0000ff';
+
+            var elem = document.getElementsByName('joe');
+            elem[0].style = 'color: #0000FF';
+
+            var bold = document.querySelector('#bold');
+            bold.style = 'font-weight: bold;';
+             
+            var blues = document.querySelectorAll('.blue');
+            for( var i=0; i<blues.length; i++){
+                blues[i].style = 'color: #0000FF; font-weight: bold;';
+            }
+
+
+            
+        </script>
+    </body>
+</html>
+

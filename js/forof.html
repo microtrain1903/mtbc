@@ -1,0 +1,39 @@
+<script>
+        var items = [
+            'for',
+            'do..while',
+            'for...in',
+            'for...of'
+        ];
+        var items = {
+            0:'for',
+            1:'do...while',
+            2:'for...in',
+            3:'for...of'
+        };
+        
+        var msg = 'JavaScript supports ' + items.length + ' types of loop.';
+        
+        var li = '';
+        /* for(i=0; i<items.length; i++){
+            li += `<li>${items[i]}</li>`;
+        } */
+
+        for(var item in items){
+            li += `<li>${items[item]}</li>`;
+        }
+        for(var item in items){
+            li2 += `<li>${items[item]}</li>`;
+        }
+        for(i=0; i<items.length; i++){
+            li += `<li>${items[i]}</li>`;
+        }
+
+
+        
+        msg += `<ul>${li}</ul>`;
+        
+        document.write(msg);
+        console.log(msg);
+        
+        </script>
