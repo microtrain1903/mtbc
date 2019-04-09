@@ -11,6 +11,13 @@
         <option value="c">C</option>
     </select>
 
+    <div id="testing">
+        Blah Blah Blah Blah Blah Blah
+    </div>
+
+    Select your favorite color: <input onchange="testing123()" type="color" id="favcolor" value="#ff0000">
+
+
     <script>
     
     function setValue(element) {
@@ -23,6 +30,13 @@
     list.addEventListener("change", ()=>{
         setValue('demo')
     });
+
+    function testing123(){
+        var temp = document.getElementById("favcolor").value;
+        var tempT = document.getElementById("testing");
+        tempT.style.color = temp;
+
+    }
 
 
 
